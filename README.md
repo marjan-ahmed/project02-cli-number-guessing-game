@@ -1,4 +1,4 @@
-# cli-number-guessing
+# cli-number-guessing-game
 <h2>Installation</h2>
 
 

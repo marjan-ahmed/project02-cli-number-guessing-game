@@ -1,5 +1,6 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
+import chalk from "chalk";
 const randomNum = Math.floor(Math.random() * 10);
 const answer = await inquirer.prompt([
     {
@@ -10,9 +11,9 @@ const answer = await inquirer.prompt([
 ]);
 const { guessedNum } = answer;
 if (guessedNum === randomNum) {
-    console.log("You guessed right number");
+    console.log(chalk.green("You guessed right!!!"));
 }
 else {
-    console.log("You guessed wrong number");
+    console.log(chalk.red("You guessed wrong"));
 }
-console.log("The number is", randomNum);
+console.log(chalk.yellow("The number is", randomNum));

@@ -1,20 +1,23 @@
 {
-  "name": "cli-number-guessing",
-  "version": "1.0.0",
+  "name": "@marjanahmed/cli-number-guessing-game",
+  "version": "2.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
   "publishConfig": {
     "access": "public"
   },
-  "bin": "index.js",
+  "bin": {
+    "number-guessing": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "@marjanahmed/cli-number-guessing-game": "^2.0.0",
     "@types/node": "^20.11.30",
     "inquirer": "^9.2.16"
   },
